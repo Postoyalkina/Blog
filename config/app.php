@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://bloglaravelposter.herokuapp.com'),
+    'url' => 'http://bloglaravelposter.herokuapp.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY','base64:8/1iHqAEdFskeXf87hQNPAdMJeZzaXKuypiMbk147hQ='),
+    'key' => 'APP_KEY','base64:8/1iHqAEdFskeXf87hQNPAdMJeZzaXKuypiMbk147hQ=',
 
     'cipher' => 'AES-256-CBC',
 
