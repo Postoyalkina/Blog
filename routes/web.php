@@ -42,7 +42,7 @@ Route::group(['middleware'=>'auth'], function (){
     })->name('logout');
 
     Route::get('/create',function (){
-        return view('account\create');
+        return view('account/create');
     })->name('create');
     Route::post('/create','PostController@create');
     Route::post('/edit-post-{post}','PostController@editRequest')
