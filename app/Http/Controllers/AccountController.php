@@ -14,6 +14,6 @@ class AccountController extends Controller
             ->where('user_id', \Auth::user()->id)
             ->orderBy('created_at','dec')
             ->get();
-        return view('account\index',['posts'=>$posts,'name'=>\Auth::user()->name]);
+        return \View::make('account\index',['posts'=>$posts,'name'=>\Auth::user()->name]);
     }
 }
