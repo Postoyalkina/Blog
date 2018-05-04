@@ -44,7 +44,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="{{route('edit',['id'=>$post->id])}}">Edit</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href=delete/{{ $post->id }}">Delete</a>
+                            <a class="dropdown-item" href="delete/{{ $post->id }}">Delete</a>
                         </div>
                     </div>
                 @endif

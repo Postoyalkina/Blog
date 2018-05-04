@@ -54,7 +54,7 @@
                 </div>
                 <p class="blog-post-meta">{{$post->created_at}}, <a href="{{route('user_posts',['user_id'=>$post->user_id])}}">{{DB::table('users')->where('id',$post->user_id)->value('name')}}</a></p>
                 <p style="white-space: pre-wrap;"><?php echo htmlspecialchars($post->body); ?></p>
-                <p class="blog-post-meta">{{DB::table('comments')->where('post_id',$post->id)->count()}} comments</p>
+                <p class="blog-post-meta" href="{{route('showPost',[$post->id])}}>{{DB::table('comments')->where('post_id',$post->id)->count()}} comments</p>
             </div>
         @endforeach
     @endif
